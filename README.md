@@ -1,2 +1,2 @@
 # FeatureEnVi: Visual Analytics for Feature Engineering Using Stepwise Selection and Semi-Automatic Extraction Approaches
-FeatureEnVi: Visual Analytics for Feature Engineering Using Stepwise Selection and Semi-Automatic Extraction Approaches
+This Git repository contains the code that accompanies the research paper "FeatureEnVi: Visual Analytics for Feature Engineering Using Stepwise Selection and Semi-Automatic Extraction Approaches". The details of the experiments and the research outcome are described in [the paper](https://doi.org/10.1109/TVCG.2022.3141040).
