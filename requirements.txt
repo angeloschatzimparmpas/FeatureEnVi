@@ -1,12 +1,11 @@
+pymongo
 Flask-PyMongo
 flask_cors
 numpy
 pandas
 joblib
+xgboost
+bayesian-optimization
 scikit-learn
-scikit-learn-extra
-sk-dist
-mlxtend
-umap-learn
 eli5
-imblearn
+statsmodels
