@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 
 For the frontend:
-- [Node.js](https://nodejs.org/en/) (including Webpack; to install it, `npm install webpack-dev-server`)
+- [Node.js](https://nodejs.org/en/) (including Webpack; to install it, `npm install webpack-dev-server@3.10.3`)
 - [D3.js](https://d3js.org/)
 - [Plotly.js](https://github.com/plotly/plotly.js/)
 
