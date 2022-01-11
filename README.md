@@ -26,11 +26,11 @@ pip install -r requirements.txt
 ```
 
 For the frontend:
-- [Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/) (including Webpack; to install it, `npm install webpack-dev-server`)
 - [D3.js](https://d3js.org/)
 - [Plotly.js](https://github.com/plotly/plotly.js/)
 
-There is no need to install anything for the frontend, since all modules are in the repository.
+There is no need to install anything further for the frontend, since all modules are in the repository.
 
 # Usage #
 Below is an example of how you can get FeatureEnVi running using Python and Node.js for the backend and frontend, respectively. The frontend is written in JavaScript/HTML with the help of Vue.js framework, so it could be hosted in any other web server of your preference. The only hard requirement (currently) is that both frontend and backend must be running on the same machine. 
