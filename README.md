@@ -6,7 +6,7 @@ This Git repository contains the code that accompanies the research paper "Featu
 
 **Note:** The tag `paper-version` matches the implementation at the time of the paper's publication. The current version might look significantly different depending on how much time has passed since then.
 
-**Note** This software is based on the [XGBoost](https://github.com/dmlc/xgboost) and [Bayesian Optimization](https://github.com/fmfn/BayesianOptimization) libraries. Using the exact same input data, different systems might generate slightly different outputs due to the use of these libraries, and such differences will propagate to our software.
+**Note:** This software is based on the [XGBoost](https://github.com/dmlc/xgboost) and [Bayesian Optimization](https://github.com/fmfn/BayesianOptimization) libraries. Using the exact same input data, different systems might generate slightly different outputs due to the use of these libraries, and such differences will propagate to our software.
 
 **Note:** As any other software, the code is not bug free. There might be limitations in the views and functionalities of the tool that could be addressed in a future code update.
 
@@ -33,7 +33,7 @@ For the frontend:
 There is no need to install anything for the frontend, since all modules are in the repository.
 
 # Usage #
-Below is an example of how you can get StackGenVis running using Python for both frontend and backend. The frontend is written in JavaScript/HTML, so it could be hosted in any other web server of your preference. The only hard requirement (currently) is that both frontend and backend must be running on the same machine. 
+Below is an example of how you can get FeatureEnVi running using Python and Node.js for the backend and frontend, respectively. The frontend is written in JavaScript/HTML with the help of Vue.js framework, so it could be hosted in any other web server of your preference. The only hard requirement (currently) is that both frontend and backend must be running on the same machine. 
 ```
 # first terminal: hosting the visualization side (client)
 # with Node.js
@@ -57,9 +57,9 @@ The following instructions describe how to reach the results present in Figure 1
 
 **Note:** We used OSX and Google Chrome in all our tests, so we cannot guarantee that it works in other OS or browser. However, since FeatureEnVi is written in JS and Python, it should work in all the most common platforms.
 
-**Tip** You will have to see a red loading bar on top whenever something is processing.
+**Tip:** You will have to see a red loading bar on the very top whenever something is processing.
 
-- Step 1: Make sure the "Red wine quality" data set is selected (top-left corner), then reload/refresh your browser. **Please note** that the first time you execute the analysis and, consequently, run the hyperparameter search, it might take a few minutes before the XGBoost classifier's hyperparameters have been tuned, using Bayesian Optimization. After the first time, the results are cached and will be re-used to make the process faster.
+- Step 1: Make sure the "Red wine quality" data set is selected (top-left corner), then reload/refresh the `localhost:8080` page open in your browser. **Please note** that the first time you execute the analysis and, consequently, run the hyperparameter search, it might take a few minutes before the XGBoost classifier's hyperparameters have been tuned, using Bayesian Optimization. After the first time, the results are cached and will be re-used to make the process faster.
 - Step 2: When *Data Space* is populated with the beeswarm plot, press the *Feature exploration* button that is shown in Figure 1(a), top-left corner.
 - Step 3: From the newly-drawn table heatmap view in the panel named as *Feature Selection Techniques* (cf. Figure 3(b)), you have to exclude/deselect the *chlorides F2, freeSulDi F10, totalSuDi F5, pH F8, resSu F7, and fixAc F4* features (Figure 3(c) and (e)). To confirm the removal/deactivation of these features, please consider pressing down on the right mouse button in this same view.
 - Step 4: We continue by transforming *volAc F1, sulphates F6, and sulphates F9* features. Starting with *volAc F1*, you have to click on *F1* in the graph visualization located at *Feature Space Detail* panel, as illustrated in Figure 4(b). 12 transformation options will be available to you; we select *F1\_l2* by clicking this specific node. The same process should be followed for the remaining features. We click *F6* and we choose *F6\_b* transformation. Finally, *F9* should become *F9\_l10*.
