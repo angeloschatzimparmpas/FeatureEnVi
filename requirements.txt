@@ -1,0 +1,12 @@
+Flask-PyMongo
+flask_cors
+numpy
+pandas
+joblib
+scikit-learn
+scikit-learn-extra
+sk-dist
+mlxtend
+umap-learn
+eli5
+imblearn
