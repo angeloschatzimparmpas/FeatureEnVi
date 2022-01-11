@@ -3,7 +3,6 @@
 This Git repository contains the code that accompanies the research paper "FeatureEnVi: Visual Analytics for Feature Engineering Using Stepwise Selection and Semi-Automatic Extraction Approaches". The details of the experiments and the research outcome are described in [the paper](https://doi.org/10.1109/TVCG.2022.3141040).
 
 **Note:** FeatureEnVi is optimized to work better for standard resolutions (such as 1440p/QHD (Quad High Definition) and 1080p). Any other resolution might need manual adjustment of your browser's zoom level to work properly.
-# StackGenVis: Alignment of Data, Algorithms, and Models for Stacking Ensemble Learning Using Performance Metrics
 
 **Note:** The tag `paper-version` matches the implementation at the time of the paper's publication. The current version might look significantly different depending on how much time has passed since then.
 
