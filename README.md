@@ -53,7 +53,7 @@ python3 insertMongo.py
 Then, open your browser and point it to `localhost:8080`. We recommend using an up-to-date version of Google Chrome.
 
 # Reproducibility of the Results #
-The following instructions describe how to reach the results present in Figure 1 of the article. The aforementioned figure is connected with Section 4 (*FeatureEnVi: System Overview and Application*) except for Subsection 4.6 and is the first use case described in the paper.
+The following instructions describe how to reach the results present in Figure 1 of the article. The aforementioned figure is connected with the entire Section 4 (*FeatureEnVi: System Overview and Application*) except for Subsection 4.6, and it is the first use case described in the paper.
 
 **Note:** We used OSX and Google Chrome in all our tests, so we cannot guarantee that it works in other OS or browser. However, since FeatureEnVi is written in JS and Python, it should work in all the most common platforms.
 
