@@ -12,15 +12,16 @@ This Git repository contains the code that accompanies the research paper "Featu
 
 # Data Sets #
 All publicly available data sets used in the paper are in the `data` folder, formatted as comma separated values (csv). 
-They are available online from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/index.php): Red Wine Quality, Vehicle Recognition, QSAR Biodegradation, and Iris Flower.
+They are based on the data sets available online from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/index.php): Red Wine Quality, Vehicle Recognition, QSAR Biodegradation, and Iris Flower.
 
 # Requirements #
 For the backend:
 - [Python 3](https://www.python.org/downloads/)
 - [Flask](https://palletsprojects.com/p/flask/)
+- [MongoDB](https://www.mongodb.com/try/download/community) (Version: 4.x)
 - Other packages: `pymongo`, `Flask-PyMongo`, `flask_cors`, `numpy`, `pandas`, `joblib`, `xgboost`, `bayesian-optimization`, `scikit-learn`, `eli5`, and `statsmodels`.
 
-You can install all the backend requirements with the following command:
+You can install all the backend requirements for Python with the following command:
 ```
 pip install -r requirements.txt
 ```
@@ -31,6 +32,13 @@ For the frontend:
 - [Plotly.js](https://github.com/plotly/plotly.js/)
 
 There is no need to install anything further for the frontend, since all modules are in the repository.
+
+For the reproducability of the first use case, the red wine quality data set should be inserted to MongoDB by using the commands below:
+```
+# recommendation: use insertMongo script to add a data set in Mongo database
+# for Python3
+python3 insertMongo.py
+```
 
 # Usage #
 Below is an example of how you can get FeatureEnVi running using Python and Node.js for the backend and frontend, respectively. The frontend is written in JavaScript/HTML with the help of Vue.js framework, so it could be hosted in any other web server of your preference. The only hard requirement (currently) is that both frontend and backend must be running on the same machine. 
@@ -44,10 +52,6 @@ npm run dev
 ```
 # second terminal: hosting the computational side (server)
 FLASK_APP=run.py flask run
-
-# (optional) recommendation: use insertMongo script to add a data set in Mongo database
-# for Python3
-python3 insertMongo.py
 ```
 
 Then, open your browser and point it to `localhost:8080`. We recommend using an up-to-date version of Google Chrome.
