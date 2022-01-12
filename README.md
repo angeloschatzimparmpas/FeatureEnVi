@@ -31,7 +31,7 @@ For the frontend:
 
 There is no need to install anything further for the frontend (e.g., D3 and Plotly.js), since all modules are in the repository.
 
-For the reproducibility of the first use case, the red wine quality data set should be inserted to MongoDB by using the commands below:
+For the reproducibility of the first use case, the Red Wine Quality data set should be inserted to MongoDB by using the commands below:
 ```
 # recommendation: use insertMongo script to add a data set in Mongo database
 # for Python3
