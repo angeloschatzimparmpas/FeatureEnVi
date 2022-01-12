@@ -28,12 +28,10 @@ pip install -r requirements.txt
 
 For the frontend:
 - [Node.js](https://nodejs.org/en/) (including Webpack; to install it, `npm install webpack-dev-server@3.10.3`)
-- [D3.js](https://d3js.org/)
-- [Plotly.js](https://github.com/plotly/plotly.js/)
 
-There is no need to install anything further for the frontend, since all modules are in the repository.
+There is no need to install anything further for the frontend (e.g., D3 and Plotly.js), since all modules are in the repository.
 
-For the reproducability of the first use case, the red wine quality data set should be inserted to MongoDB by using the commands below:
+For the reproducibility of the first use case, the red wine quality data set should be inserted to MongoDB by using the commands below:
 ```
 # recommendation: use insertMongo script to add a data set in Mongo database
 # for Python3
