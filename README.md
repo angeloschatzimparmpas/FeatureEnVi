@@ -61,7 +61,7 @@ The following instructions describe how to reach the results present in Figure 1
 
 **Tip:** You will have to see a red loading bar on the very top of your browser whenever something is processing.
 
-**Tip:** Our [demonstration video](https://vimeo.com/662536366) presents the same procedure, using the Red Wine Quality data set (from 02:12 until 10:05).
+**Tip:** Our [demonstration video](https://vimeo.com/662536366) presents the following procedure, using the same data set (from 02:12 until 10:05).
 
 - Step 1: Make sure the "Red wine quality" data set is selected (top-left corner), then reload/refresh the `localhost:8080` page open in your browser. **Please note** that the first time you execute the analysis and, consequently, run the hyperparameter search, it might take a few minutes before the XGBoost classifier's hyperparameters have been tuned, using Bayesian Optimization. After the first time, the results are cached and will be re-used to make the process faster.
 - Step 2: When *Data Space* is populated with the beeswarm plot, press the *Feature exploration* button that is shown in Figure 1(a), top-left corner.
