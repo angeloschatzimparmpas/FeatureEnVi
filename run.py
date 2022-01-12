@@ -536,6 +536,13 @@ def dataSetSelection():
                 pass
             AllTargetsFloatValues.append(Class)
             previous = value
+    dfRaw = pd.DataFrame.from_dict(DataResultsRaw)
+    
+    # OneTimeTemp = copy.deepcopy(dfRaw)
+    # OneTimeTemp.drop(columns=['_id', 'InstanceID'])
+    # column_names = ['volAc',  'chlorides',  'density',  'fixAc' , 'totalSuDi' , 'citAc',  'resSu'  ,  'pH' , 'sulphates', 'freeSulDi' ,'alcohol', 'quality*']
+    # OneTimeTemp = OneTimeTemp.reindex(columns=column_names)
+    # OneTimeTemp.to_csv('dataExport.csv', index=False)
 
     ArrayDataResults = pd.DataFrame.from_dict(DataResults)
 
@@ -595,7 +602,7 @@ def create_global_function():
     @memory.cache
     def estimator(n_estimators, eta, max_depth, subsample, colsample_bytree):
         # initialize model
-        print('loopingQSAR')
+        print('loop')
         n_estimators = int(n_estimators)
         max_depth = int(max_depth)
         model = XGBClassifier(n_estimators=n_estimators, eta=eta, max_depth=max_depth, subsample=subsample, colsample_bytree=colsample_bytree, n_jobs=-1, random_state=RANDOM_SEED, silent=True, verbosity = 0, use_label_encoder=False)

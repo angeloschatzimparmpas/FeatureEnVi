@@ -149,7 +149,7 @@ export default Vue.extend({
       DataResults: '',
       keyNow: 1,
       instancesImportance: '',
-      RetrieveValueFile: 'WineC', // this is for the default data set
+      RetrieveValueFile: 'VehicleC', // this is for the default data set
       //RetrieveValueFile: 'VehicleC', // this is for the default data set
       SelectedFeaturesPerClassifier: '',
       FinalResults: 0,

@@ -47,7 +47,7 @@ export default {
   name: 'DataSetSlider',
   data () {
     return {
-      defaultDataSet: 'WineC', // default value for the first data set
+      defaultDataSet: 'VehicleC', // default value for the first data set
       searchText: 'Feature exploration',
       resetText: 'Factory reset',
       dataset: 'Data set'
