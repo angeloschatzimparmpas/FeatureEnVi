@@ -16,7 +16,7 @@ They are based on the data sets available online from the [UCI Machine Learning 
 
 # Requirements #
 For the backend:
-- [Python 3](https://www.python.org/downloads/)
+- [Python 3](https://www.python.org/downloads/) (Version: 3.8.x)
 - [Flask](https://palletsprojects.com/p/flask/)
 - [MongoDB](https://www.mongodb.com/try/download/community) (Version: 4.x)
 - Other packages: `pymongo`, `Flask-PyMongo`, `flask_cors`, `numpy`, `pandas`, `joblib`, `xgboost`, `bayesian-optimization`, `scikit-learn`, `eli5`, and `statsmodels`.
@@ -44,6 +44,7 @@ Below is an example of how you can get FeatureEnVi running using Python and Node
 # first terminal: hosting the visualization side (client)
 # with Node.js
 cd frontend
+npm install webpack-dev-server@3.10.3
 npm run dev
 ```
 
