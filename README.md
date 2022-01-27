@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 
 For the frontend:
-- [Node.js](https://nodejs.org/en/) (including Webpack; to install it, `npm install webpack-dev-server@3.10.3`)
+- [Node.js](https://nodejs.org/en/) (including Webpack; to install it, `npm install webpack-dev-server@3.7.1`)
 
 There is no need to install anything further for the frontend (e.g., D3 and Plotly.js), since all modules are in the repository.
 
@@ -43,7 +43,7 @@ Below is an example of how you can get FeatureEnVi running using Python and Node
 # first terminal: hosting the visualization side (client)
 # with Node.js
 cd frontend
-npm install webpack-dev-server@3.10.3
+npm install webpack-dev-server@3.7.1
 npm run dev
 ```
 
